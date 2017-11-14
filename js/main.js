@@ -34,9 +34,8 @@ var reset = function() {
 var checkForMatch = function() {	
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 		alert("You found a match!");
-		playerScore += 1
-		//console.log(playerScore);
-		document.querySelector("h3").textContent = "Your score: " + playerScore;
+		playerScore += 1		
+		document.querySelector("h3").innerHTML = "Your score: <span>" + playerScore + "</span>";
 	} else {
 		alert("Sorry, try again.");
 	}
@@ -68,10 +67,7 @@ var createBoard = function(){
 
 
 createBoard();
-
-
-
-document.querySelector("button").addEventListener("click", reset);
+/*document.querySelector("button").addEventListener("click", reset);*/
 
 
 
